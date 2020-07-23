@@ -1,0 +1,24 @@
+%header.pcHeader
+  .headerInner
+    .mainHeader
+      %h1.icon
+        = link_to root_path do
+          = image_tag 'logo-.svg', alt: 'icon', height: '62px', width: '214px'
+      .searchBox
+        = form_with url: '#', method: :get, local: true do |f|
+          = f.text_field placeholder: 'キーワードから探す', class: 'searchBox--input'
+          = f.submit class: 'searchBox--submit'
+    .nav
+.Main
+  %section.Visual
+  %section.TopIntroduction
+  %section.TopMiddleDl
+  %section.TopKeyFeatures
+  %section.PickupContainer
+  %section.PickupContainer
+%aside.appBanner
+  .Inner
+    %h2.Inner__title
+    %p.Inner_text
+    .Inner__icon
+.Footer
