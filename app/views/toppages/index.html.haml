@@ -3,22 +3,32 @@
     .mainHeader
       %h1.icon
         = link_to root_path do
-          = image_tag 'logo-.svg', alt: 'icon', height: '62px', width: '214px'
+          = image_tag 'logo-.svg', alt: 'icon'
       .searchBox
         = form_with url: '#', method: :get, local: true do |f|
-          = f.text_field placeholder: 'キーワードから探す', class: 'searchBox--input'
-          = f.submit class: 'searchBox--submit'
+          = f.text_field :searchInput, name: "key", class: "searchBox--input", placeholder: "キーワードから探す"
+          %button{type: "submit"}
+            .searchBox__icon
+              = image_tag 'icon-search.svg', alt: 'icon'
+      %ul.resultLists
     .nav
-.Main
-  %section.Visual
-  %section.TopIntroduction
-  %section.TopMiddleDl
-  %section.TopKeyFeatures
-  %section.PickupContainer
-  %section.PickupContainer
-%aside.appBanner
-  .Inner
-    %h2.Inner__title
-    %p.Inner_text
-    .Inner__icon
-.Footer
+      %ul.listsLeft
+        %li.listsLeft__item.listsLeft__item--first
+          = link_to "#", id: "catBtn" do
+            カテゴリー
+          .tree.displayNone
+            %ul.categoryTree.displayNone
+        %li.listsLeft__item
+          = link_to "#", id: "brandBtn" do
+            ブランド
+          %ul.brandsPulldown.displayNone
+      %ul.listsRight
+        %li.listsRight__item.listsRight__item--login
+          = link_to "#" do
+            ログイン
+        %li.listsRight__item.listsRight__item--new
+          = link_to "#" do
+            新規会員登録
+        
+.main
+  %section.mainVisual
