@@ -75,6 +75,9 @@
           background-size: 18px;
           padding-right: 30px;
         }
+        a:hover{
+          color: #ffb340
+        }
       }
     }
     .listsRight {
@@ -117,6 +120,9 @@ img {
     display: flex;
     flex-direction: column;
     position: relative;
+    li {
+      position: relative;
+    }
   }
 }
 
@@ -360,7 +366,6 @@ img {
     .productList {
       width: 220px;
       display: inline-block;
-      float: left;
       a {
         background-color: #fff;
         display: inline-block;
