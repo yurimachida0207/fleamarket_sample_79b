@@ -1,5 +1,11 @@
 @import "reset";
+@import "modules/mixin";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "modules/show";
 @import "modules/header"
+@import "modules/transactions";
+@import "modules/mypages";
+@import "modules/logout";
+@import "modules/payments";
+@import "modules/new_items";

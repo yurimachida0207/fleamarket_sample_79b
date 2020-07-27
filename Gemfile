@@ -66,3 +66,9 @@ end
 
 gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem 'font-awesome-sass'
+
+gem 'devise'
+gem 'payjp'
+
+gem 'jquery-rails'
+
