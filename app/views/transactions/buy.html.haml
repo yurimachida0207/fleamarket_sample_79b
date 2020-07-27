@@ -2,13 +2,11 @@
   .header
     = image_tag "/material/logo/logo.png", class: "logo"
   .main
-    //purchase-detail(購入詳細)
     .main__purchase-details
       .main__purchase-details__headline-box
         .main__purchase-details__headline-box__headline
           %h1 購入内容の確認
 
-        //product(商品の名前や金額など)
         .main__purchase-details__product
           .main__purchase-details__product__image-box
             .main__purchase-details__product__image-box__image
@@ -19,14 +17,12 @@
             .main__purchase-details__product__name-box__price
               %h2 送料込み(税込み)¥999,999
 
-        //payment-amount(支払い金額)
         .main__purchase-details__payment-amount
           .main__purchase-details__payment-amount__headline
             %h1 支払い金額
           .main__purchase-details__payment-amount__actual-payment-amount
             %h2 ¥999,999
 
-        //method-of-payment(支払い方法)
         .main__purchase-details__method-of-payment
           %h1 支払い方法
           .main__purchase-details__method-of-payment__card
@@ -35,23 +31,11 @@
             %p 有効期限 12/20
             = image_tag "/material/icon/icon-visa.png", class: "card-icon"
 
-        //shipping-address(配送先)
         .main__purchase-details__shipping-address
           %h1 配送先住所
           %p 〒999-9999
           %p 日本東京都〇〇市〇〇町999-99
 
-        //buybtn-field(購入ボタン)
         .main__purchase-details__buybtn-field
           .main__purchase-details__buybtn-field__buybtn
-            = link_to "購入する", "/transactions/buy" ,class: 'text-decoration'
-  -# .footer
-  -#   .footer__box
-  -#     .footer__box__term
-  -#       = link_to "プライバシーポリシー", "#", class:'term'
-  -#     .footer__box__policy
-  -#       = link_to "FURIMA利用規約", "#", class:'term'
-  -#     .footer__box__specific-commerce
-  -#       = link_to "特定商取引に関する表記", "#", class:'term'
-    -# .footer-logo
-    -#   = image_tag "/material/logo/logo-white.png", class:"logo-white"
+            = link_to "購入する", "transactions_buy_path" ,class: 'text-decoration'
